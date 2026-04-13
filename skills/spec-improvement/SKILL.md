@@ -5,12 +5,12 @@ description: Reviews and improves project specifications located in the ./specs 
 
 # Specifications Improvement
 
-Analyze the project specifications in `./specs` and generate structured improvement proposals, also formulating questions for the user to complete and refine each spec.
+Analyze the project specifications in `.specs` and generate structured improvement proposals, also formulating questions for the user to complete and refine each spec.
 
 ## Review Workflow
 
 1. **Determine the scope:**
-   **Review all specs?** → List all files in `./specs`, read each one, and generate a summary of findings.
+   **Review all specs?** → List all files in `.specs`, read each one, and generate a summary of findings.
    **Review a specific spec?** → Read the file indicated by the user.
 
 2. **Analyze each spec** applying the quality checklist → See [quality-checklist.md](references/checklist-calidad.md)
@@ -63,7 +63,6 @@ For each reviewed spec, generate the following output:
 1. [Concrete question to clarify ambiguities or complete the spec]
 2. [...]
 
-
 ## Analysis Rules
 
 - Check that each spec has: a clear objective, defined scope, use cases, acceptance criteria, and constraints or dependencies.
@@ -77,3 +76,4 @@ For each reviewed spec, generate the following output:
 - Limit questions for the user to a maximum of 3 per spec to avoid overwhelming them.
 
 - Prioritize questions by impact: start with those that block implementation.
+```
