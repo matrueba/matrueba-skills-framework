@@ -1,0 +1,39 @@
+{
+  "skill_name": "generate-commit-message",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Help me write a commit message for my current changes",
+      "expected_output": "A conventional commit message based on the actual diff in the repository",
+      "files": [],
+      "expectations": [
+        "The output contains a commit message in conventional commits format: type(scope): description",
+        "The type is one of: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert",
+        "The description is in lowercase imperative mood",
+        "The subject line is under 72 characters"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "What should I commit? Summarize my recent changes",
+      "expected_output": "A summary of changes with a proposed conventional commit message",
+      "files": [],
+      "expectations": [
+        "The skill analyzes the git diff or status",
+        "A conventional commit message is proposed",
+        "If changes span multiple concerns, the skill suggests splitting commits"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Prepare a conventional commit for the bug fix I just made",
+      "expected_output": "A fix-type conventional commit message",
+      "files": [],
+      "expectations": [
+        "The commit message starts with fix or fix(scope):",
+        "The description accurately reflects the changes in the diff",
+        "The message is ready to copy and use directly"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "skill_name": "create-agents-md",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Acabo de crear un nuevo proyecto en Python con FastAPI, todavía no tengo código. Quiero configurar el AGENTS.md para que cuando use copilot o cualquier AI todo el equipo tenga las mismas reglas. Crea el archivo.",
+      "expected_output": "An AGENTS.md file is created at the project root using the full template with all [placeholder] markers intact, since there's no code to analyze. The developer is informed which sections to fill in.",
+      "files": [],
+      "expectations": [
+        "An AGENTS.md file is created in the project root",
+        "All placeholder markers [brackets] are preserved since the project is empty",
+        "The file follows the complete template structure with all 8 sections",
+        "The developer is told to fill in the placeholders as the project evolves"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Necesito que analices mi proyecto y me generes un AGENTS.md con toda la info del stack, convenciones y arquitectura. El proyecto es un backend en Node.js con Express y MongoDB que ya tiene bastante código.",
+      "expected_output": "The skill analyzes the existing codebase (package.json, source files, config files, folder structure) and generates an AGENTS.md with concrete values extracted from the project rather than placeholders. TODO comments are added where information couldn't be determined from code alone.",
+      "files": [],
+      "expectations": [
+        "The codebase is analyzed before generating the file",
+        "package.json dependencies are read to determine the tech stack",
+        "Concrete values replace placeholders wherever the code provides the answer",
+        "Sections that couldn't be determined from code have <!-- TODO: Verify --> comments",
+        "Secrets and actual env values are never included in the output"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Ya tengo un AGENTS.md pero está desactualizado, hemos migrado de JavaScript a TypeScript y cambiamos de Jest a Vitest. Actualiza el AGENTS.md con los cambios del proyecto actual.",
+      "expected_output": "The existing AGENTS.md is read, the codebase is analyzed to detect the TypeScript migration and Vitest adoption, and the file is updated to reflect the current state while preserving any custom sections the developer had added.",
+      "files": [],
+      "expectations": [
+        "The existing AGENTS.md is read before making changes",
+        "Custom sections added by the developer are preserved",
+        "The language section is updated to reflect TypeScript",
+        "The testing section is updated to reflect Vitest instead of Jest",
+        "The codebase is analyzed to detect real current state"
+      ]
+    }
+  ]
+}
