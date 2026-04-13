@@ -1,4 +1,4 @@
-# DeepTrack SW Skills
+#  Matrueba Skills
 
 Central repository for reusable skills and CLI tooling.
 
@@ -9,25 +9,25 @@ The expected workflow is to install skills from a remote GitLab repository direc
 Base command:
 
 ```bash
-npx skills add <gitlab-repository>
+npx skills add <github-repository>
 ```
 
 If you want to install a specific skill:
 
 ```bash
-npx skills add <gitlab-repository> --skill <skill-name>
+npx skills add <github-repository> --skill <skill-name>
 ```
 
 Example:
 
 ```bash
-npx skills add https://gitlab.com/deeptrack1/sw/tools/deeptrack-sw-skills.git
+npx skills add git@github.com:matrueba/matrueba-skills-framework.git
 ```
 
 Example installing a single skill:
 
 ```bash
-npx skills add https://gitlab.com/deeptrack1/sw/tools/deeptrack-sw-skills.git --skill update-changelog
+npx skills add git@github.com:matrueba/matrueba-skills-framework.git --skill update-changelog
 ```
 
 ## Installation destination
