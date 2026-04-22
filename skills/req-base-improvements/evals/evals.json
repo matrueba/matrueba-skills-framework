@@ -1,0 +1,23 @@
+{
+  "skill_name": "req-improvements",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review the requirements in .project-requirements/metadata.md and tell me if they're good enough to start development",
+      "expected_output": "Should read the file, produce a structured assessment with verdict/strengths/gaps, ask 3-5 targeted questions, and propose improvements. Should save an improved REQUIREMENTS.md.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I wrote some requirements for our new notification system but I'm not sure if I covered everything. Can you check them? They're in docs/notifications-requirements.md",
+      "expected_output": "Should read the specified file, evaluate completeness and rigor, identify missing sections like error handling or rollout plan, ask targeted questions, and generate an improved REQUIREMENTS.md.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Improve these requirements:\n\n## User Authentication\n\nWe need to add login and signup to the app. Users should be able to log in with email and password. We also want social login.",
+      "expected_output": "Should flag the requirements as incomplete (🔴), identify critical gaps (no scope boundaries, no error handling, no security details, no acceptance criteria), ask 3-5 questions about specifics (which social providers, password policy, session management), and propose a comprehensive improved version saved to REQUIREMENTS.md.",
+      "files": []
+    }
+  ]
+}
