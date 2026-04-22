@@ -30,3 +30,5 @@ Do not make assumptions about missing information unless the user explicitly tel
    - For a **new** feature (`new`), create the specification file at `.specs/new/<feature-name>/spec.md`.
    - For a **change** to an existing feature (`changes`), create the specification file at `.specs/changes/<feature-name>/spec.md`.
    - Ensure the `<feature-name>` directory is properly formatted (using kebab-case, e.g., `user-authentication`).
+3. **Notify the User**
+   - After successfully creating the `.specs/<spec-name>/spec.md`, suggest the user use the `spec-improvement` skill to get feedback and refinements.
