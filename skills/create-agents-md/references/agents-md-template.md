@@ -126,9 +126,4 @@ Before writing code, follow this sequence:
 
 ## 8. Project Skills
 
-*This project uses skills to extend AI capabilities for specific tasks. Consult the corresponding skill when a task matches its trigger condition.*
-
-| Skill Name | Path | When to Use |
-| --- | --- | --- |
-| [skill-name] | `skills/[skill-name]/SKILL.md` | [Describe when the AI should invoke this skill] |
-| [skill-name] | `skills/[skill-name]/SKILL.md` | [Describe when the AI should invoke this skill] |
+*This project uses skills to extend AI capabilities for specific tasks. Consult the corresponding skill when a task matches its trigger condition. If it exists, you can consult [SKILLS_SUMMARY.md](skills/SKILLS_SUMMARY.md) to see what skills are available and their utility, with the goal of going directly to a skill you need and saving tokens.*

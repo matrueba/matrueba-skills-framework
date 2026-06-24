@@ -94,3 +94,8 @@ This step requires scanning actual code — not config files.
 | Design system | `DESIGN.md` at the project root — if found, it is the source of truth for UI design decisions |
 | CSS approach | Imports of `tailwind`, styled-components, CSS modules (`.module.css`), SASS/LESS files, CSS-in-JS patterns |
 | UI component library | `@mui`, `@chakra-ui`, `antd`, `shadcn`, `radix-ui`, `headlessui` |
+
+
+## 2.12 Project Skills
+
+*This project uses skills to extend AI capabilities for specific tasks. Consult the corresponding skill when a task matches its trigger condition. If it exists, you can consult [SKILLS_SUMMARY.md](skills/SKILLS_SUMMARY.md) to see what skills are available and their utility, with the goal of going directly to a skill you need and saving tokens.*
