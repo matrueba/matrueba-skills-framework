@@ -47,15 +47,17 @@ For projects with existing code, read the codebase to extract real information r
 | **Env var patterns** | `.env.example`, `.env.sample`, docker-compose env definitions |
 | **Specs** | `.specs/` directory to confirm the workflow step is applicable |
 | **Skills** | Look for `skills/` directories or `.md` files referencing skills to populate the Project Skills table |
+| **UI Design & Style** | Check for a `DESIGN.md` at the project root — if found, it defines the visual design system (colors, typography, spacing, components). Reference it in section 3.4 of the generated `AGENTS.md` |
 
 #### How to Generate
 
 1. Gather findings from the analysis above.
 2. Read the template from `references/agents-md-template.md`.
 3. Fill in every section with concrete values from the analysis. Replace all `[placeholder]` markers with real data.
-4. For sections where the codebase doesn't provide a clear answer (e.g., architectural principles that aren't explicitly documented), mark them with a `<!-- TODO: Verify -->` comment so the developer knows to check.
-5. Remove sections that genuinely don't apply (e.g., "UI/Components" for a CLI tool) rather than leaving empty placeholders.
-6. Write the file to the project root as `AGENTS.md`.
+4. If a `DESIGN.md` file exists, populate section 3.4 (UI Design & Style) referencing it as the design source of truth. If no `DESIGN.md` exists but the project has a frontend, include the section with a `<!-- TODO: Create DESIGN.md -->` comment to encourage the developer to define one.
+5. For sections where the codebase doesn't provide a clear answer (e.g., architectural principles that aren't explicitly documented), mark them with a `<!-- TODO: Verify -->` comment so the developer knows to check.
+6. Remove sections that genuinely don't apply (e.g., "UI/Components" for a CLI tool, "UI Design & Style" for a backend-only project) rather than leaving empty placeholders.
+7. Write the file to the project root as `AGENTS.md`.
 
 ### Step 2B: Template Mode (Empty Project)
 

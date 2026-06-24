@@ -70,6 +70,12 @@
 - **Validation:** Validate all external inputs at the boundary using `[Validation Library]`.
 - **Performance:** [e.g., "O(n) complexity limit for data processing", "Optimize for memory usage over speed"]
 
+### 3.4 UI Design & Style
+
+- **Design System Reference:** If a `DESIGN.md` file exists at the project root, it is the **source of truth** for all UI design and styling decisions.
+- **What it covers:** Color palettes, typography, spacing, component design guidelines, branding rules, responsive breakpoints, accessibility standards, and any visual patterns specific to the project.
+- **Agent behavior:** Before generating or modifying any frontend/UI code, **always check for and read `DESIGN.md`**. Apply its guidelines over generic defaults. If no `DESIGN.md` exists, follow standard best practices and suggest creating one.
+
 ## 4. Architectural Principles
 
 *Choose the principles that apply to this specific project.*
